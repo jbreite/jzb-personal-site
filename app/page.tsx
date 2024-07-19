@@ -4,13 +4,13 @@ import TextLink from "./ui/components/TextLink";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start px-6 py-24 ">
-      <div>
+      <div className="max-w-xl">
         <header className="">
           <h1>Josh Breite</h1>
           <time className="text-[#ADADAD]">Updated, July 19, 2024</time>
         </header>
 
-        <p className="pt-4">
+        <p className="pt-4 ">
           I live in New York. Currently exploring new opportunities.
         </p>
         <div className="flex flex-col pt-2 gap-y-4 ">
@@ -24,10 +24,10 @@ export default function Home() {
             intern and then to product manager in residence, where I worked on
             many different types of crypto products.
           </p>
-
           <p>
             I also worked at{" "}
-            <TextLink href="http://joinpogo.com" label="Pogo" />.
+            <TextLink href="http://joinpogo.com" label="Pogo" /> as an intern
+            where I worked on product (and other things).
           </p>
           <p>
             I graduated from Northwestern with a major in Learning and
