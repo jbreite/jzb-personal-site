@@ -7,17 +7,18 @@ import SubstackLogo from "../public/substackLogo.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start px-6 py-24">
+    <main className="flex min-h-screen flex-col items-center justify-start px-6 py-12">
       <div className="max-w-xl">
-        <header className="text-sm">
+        <header className=" text-sm">
           <h1>Josh Breite</h1>
-          <time className="text-[#ADADAD]">Updated, July 19, 2024</time>
+          <time className="text-[#ADADAD]">Last updated, July 19, 2024</time>
         </header>
 
         <div className="flex flex-col gap-y-4 py-6 text-sm">
           <p>I live in New York. Currently exploring new opportunities.</p>
           <p>
-            I co-founded <TextLink href="http://joinfire.xyz" label="Fire" /> a
+            I co-founded{" "}
+            <TextLink href="http://joinfire.xyz" label="Fire" external /> a
             company that protected users&apos; crypto funds.
           </p>
           <p>
@@ -37,7 +38,7 @@ export default function Home() {
           </p>
 
           <p>
-            You can reach me at{" "}
+            Reach me at either{" "}
             <TextLink href="http://x.com/joshbreite" label="@joshbreite" /> or{" "}
             <TextLink
               href="mailto:joshbreite@gmail.com"
@@ -72,9 +73,4 @@ export default function Home() {
       </div>
     </main>
   );
-}
-{
-  /* 💻 And/or GitHub: EurekaLabsAI 💬 And/or Discord: Eureka Labs 💌
-            And/or share your email with us to subscribe to our newsletter 📣
-            Announcement post on 𝕏 with a bit more information. */
 }
