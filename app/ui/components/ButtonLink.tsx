@@ -13,10 +13,9 @@ export default function ButtonLink({
   return (
     <a
       href={href}
-      className="flex items-center justify-center p-2 bg-[#F6F7F9] rounded-xl gap-x-1"
+      className="flex items-center justify-center p-2 bg-[#F6F7F9] rounded-lg gap-x-1"
     >
-      <Image src={image} alt={label} className="w-4 h-4" />
-      <p className="text-sm">{label}</p>
+      <Image src={image} alt={label} className="w-4 " />
     </a>
   );
 }
