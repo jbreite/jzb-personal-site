@@ -7,7 +7,7 @@ import SubstackLogo from "../public/substackLogo.svg";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start px-6 py-12">
+    <main className="flex min-h-screen flex-col items-center justify-start py-6 px-6 sm:py-16">
       <div className="max-w-xl">
         <header className=" text-sm">
           <h1>Josh Breite</h1>
