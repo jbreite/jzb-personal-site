@@ -35,6 +35,16 @@ export default function Home() {
             I graduated from Northwestern with a major in Learning and
             Organizational Change and a minor in Computer Science.
           </p>
+
+          <p>
+            You can reach me at{" "}
+            <TextLink href="http://x.com/joshbreite" label="@joshbreite" /> or{" "}
+            <TextLink
+              href="mailto:joshbreite@gmail.com"
+              label="joshbreite@gmail.com"
+            />
+            .
+          </p>
         </div>
 
         <div className="flex text-sm flex-row gap-x-4 gap-y-2 flex-wrap">
