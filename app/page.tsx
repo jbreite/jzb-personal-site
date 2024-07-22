@@ -9,17 +9,19 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start py-6 px-6 sm:py-16">
       <div className="max-w-xl">
-        <header className=" text-sm">
-          <h1>Josh Breite</h1>
-          <time className="text-[#ADADAD]">Last updated, July 19, 2024</time>
+        <header>
+          <h1 className="font-medium">Josh Breite</h1>
+          {/* <time className="text-[#ADADAD]">Last updated, July 19, 2024</time> */}
         </header>
 
-        <div className="flex flex-col gap-y-4 py-6 text-sm">
+        <div className="flex flex-col gap-y-4 py-6 ">
           <p>I live in New York. Currently exploring new opportunities.</p>
           <p>
             I co-founded{" "}
-            <TextLink href="http://joinfire.xyz" label="Fire" external /> a
-            company that protected users&apos; crypto funds.
+            <TextLink href="http://joinfire.xyz" label="Fire" external /> a a
+            security tool to help users protect funds while interacting with
+            crypto. We had 60k+ users who downloaded our extension, while
+            protecting over $750m in assets.
           </p>
           <p>
             Before that, I worked for{" "}
@@ -39,7 +41,7 @@ export default function Home() {
 
           <p>
             Reach me at either{" "}
-            <TextLink href="http://x.com/joshbreite" label="@joshbreite" /> or{" "}
+            <TextLink href="https://x.com/joshbreite" label="@joshbreite" /> or{" "}
             <TextLink
               href="mailto:joshbreite@gmail.com"
               label="joshbreite@gmail.com"
@@ -48,14 +50,14 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="flex text-sm flex-row gap-x-4 gap-y-2 flex-wrap">
+        <div className="flex  flex-row gap-x-4 gap-y-2 flex-wrap">
           <ButtonLink
-            href="http://x.com/joshbreite"
+            href="https://x.com/joshbreite"
             label="Twitter"
             image={TwitterLogo}
           />
           <ButtonLink
-            href="http://warpcast.com/joshbreite.eth"
+            href="https://warpcast.com/joshbreite.eth"
             label="Farcaster"
             image={FarcasterLogo}
           />
@@ -65,7 +67,7 @@ export default function Home() {
             image={LinkedinLogo}
           />
           <ButtonLink
-            href="https://www.linkedin.com/in/josh-breite-0ba696173/"
+            href="https://joshbreite.substack.com/"
             label="Substack"
             image={SubstackLogo}
           />
