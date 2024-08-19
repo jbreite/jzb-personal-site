@@ -4,6 +4,7 @@ import TwitterLogo from "../public/twitterLogo.svg";
 import FarcasterLogo from "../public/farcasterLogo.svg";
 import LinkedinLogo from "../public/linkedinLogo.svg";
 import SubstackLogo from "../public/substackLogo.svg";
+import GitHubLogo from "../public/githubLogo.svg";
 
 const FireLink = "https://www.joinfire.xyz/";
 const AtomicLink = "https://atomic.vc/";
@@ -13,6 +14,7 @@ const EmailLink = "mailto:joshbreite@gmail.com";
 const FarcasterLink = "https://warpcast.com/joshbreite.eth";
 const LinkedInLink = "https://www.linkedin.com/in/josh-breite-0ba696173/";
 const SubstackLink = "https://joshbreite.substack.com/";
+const GitHubLink = "https://github.com/jbreite";
 
 export default function Home() {
   return (
@@ -60,6 +62,8 @@ export default function Home() {
             label="Farcaster"
             image={FarcasterLogo}
           />
+          <ButtonLink href={GitHubLink} label="GitHub" image={GitHubLogo} />
+
           <ButtonLink
             href={LinkedInLink}
             label="LinkedIn"
