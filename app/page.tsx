@@ -6,7 +6,9 @@ import LinkedinLogo from "../public/linkedinLogo.svg";
 import SubstackLogo from "../public/substackLogo.svg";
 import GitHubLogo from "../public/githubLogo.svg";
 
-const FireLink = "https://www.joinfire.xyz/";
+const FireLink =
+  "https://web.archive.org/web/20240502130303/https://www.joinfire.xyz/";
+const KerebusSite = "https://www.kerberus.com/";
 const AtomicLink = "https://atomic.vc/";
 const PogoLink = "https://www.joinpogo.com/";
 const TwitterLink = "https://x.com/joshbreite";
@@ -31,7 +33,8 @@ export default function Home() {
             I co-founded <TextLink href={FireLink} label="Fire" external /> a a
             security tool to help users protect funds while interacting with
             crypto. We had 60k+ users who downloaded our extension, while
-            protecting over $750m in assets.
+            protecting over $750m in assets. Fire was acquired by{" "}
+            <TextLink href={KerebusSite} label="Kerebus" external />.
           </p>
           <p>
             Before that, I worked for{" "}
