@@ -1,12 +1,13 @@
 "use client";
 
+import { Suspense } from "react";
 import AnimatedTabs from "./components/custom/AnimatedTabs";
 import { useSearchParams, useRouter } from "next/navigation";
 import About from "./components/custom/About";
 
 const tabs = ["About", "Work"];
 
-export default function Home() {
+function HomeContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const activeTab = searchParams.get("tab") || "About";
@@ -28,5 +29,13 @@ export default function Home() {
         {activeTab === "About" && <About />}
       </div>
     </main>
+  );
+}
+
+export default function Home() {
+  return (
+    <Suspense>
+      <HomeContent />
+    </Suspense>
   );
 }
