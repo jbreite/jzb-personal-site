@@ -20,65 +20,63 @@ const GitHubLink = "https://github.com/jbreite";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start py-6 px-6 sm:py-16">
-      <div className="max-w-xl">
-        <header>
-          <h1 className="font-medium">Josh Breite</h1>
-          {/* <time className="text-[#ADADAD]">Last updated, July 19, 2024</time> */}
-        </header>
+    <>
+      <header>
+        <h1 className="font-medium">Josh Breite</h1>
+      </header>
 
-        <div className="flex flex-col gap-y-4 py-6 ">
-          <p>I live in New York. Currently exploring new opportunities.</p>
-          <p>
-            I co-founded <TextLink href={FireLink} label="Fire" external /> a a
-            security tool to help users protect funds while interacting with
-            crypto. We had 60k+ users who downloaded our extension, while
-            protecting over $750m in assets. Fire was acquired by{" "}
-            <TextLink href={KerebusSite} label="Kerebus" external />.
-          </p>
-          <p>
-            Before that, I worked for{" "}
-            <TextLink label="Atomic" href={AtomicLink} />, starting as an intern
-            and then to product manager in residence, where I worked on many
-            different types of crypto products.
-          </p>
-          <p>
-            I also worked at <TextLink href={PogoLink} label="Pogo" /> as an
-            intern where I worked on product (and other things).
-          </p>
-          <p>
-            I graduated from Northwestern with a major in Learning and
-            Organizational Change and a minor in Computer Science.
-          </p>
+      <div className="flex flex-col gap-y-4 py-6 ">
+        <p>I live in New York. Currently exploring new opportunities.</p>
+        <p>
+          I co-founded <TextLink href={FireLink} label="Fire" external /> a a
+          security tool to help users protect funds while interacting with
+          crypto. We had 60k+ users who downloaded our extension, while
+          protecting over $750m in assets. Fire was acquired by{" "}
+          <TextLink href={KerebusSite} label="Kerebus" external />.
+        </p>
+        <p>
+          Before that, I worked for{" "}
+          <TextLink label="Atomic" href={AtomicLink} />, starting as an intern
+          and then to product manager in residence, where I worked on many
+          different types of crypto products.
+        </p>
+        <p>
+          I also worked at <TextLink href={PogoLink} label="Pogo" /> as an
+          intern where I worked on product (and other things).
+        </p>
+        <p>
+          I graduated from Northwestern with a major in Learning and
+          Organizational Change and a minor in Computer Science.
+        </p>
 
-          <p>
-            Reach me at either{" "}
-            <TextLink href={TwitterLink} label="@joshbreite" /> or{" "}
-            <TextLink href={EmailLink} label="joshbreite@gmail.com" />.
-          </p>
-        </div>
+        <p>
+          Reach me at either <TextLink href={TwitterLink} label="@joshbreite" />{" "}
+          or <TextLink href={EmailLink} label="joshbreite@gmail.com" />.
+        </p>
+      </div>
 
-        <div className="flex  flex-row gap-x-4 gap-y-2 flex-wrap">
-          <ButtonLink href={TwitterLink} label="Twitter" image={TwitterLogo} />
-          <ButtonLink
-            href={FarcasterLink}
-            label="Farcaster"
-            image={FarcasterLogo}
-          />
-          <ButtonLink href={GitHubLink} label="GitHub" image={GitHubLogo} />
+      <div className="flex  flex-row gap-x-4 gap-y-2 flex-wrap">
+        <ButtonLink href={TwitterLink} label="Twitter" image={TwitterLogo} />
+        <ButtonLink
+          href={FarcasterLink}
+          label="Farcaster"
+          image={FarcasterLogo}
+        />
+        <ButtonLink href={GitHubLink} label="GitHub" image={GitHubLogo} />
 
-          <ButtonLink
-            href={LinkedInLink}
-            label="LinkedIn"
-            image={LinkedinLogo}
-          />
-          <ButtonLink
-            href={SubstackLink}
-            label="Substack"
-            image={SubstackLogo}
-          />
+        <ButtonLink href={LinkedInLink} label="LinkedIn" image={LinkedinLogo} />
+        <ButtonLink href={SubstackLink} label="Substack" image={SubstackLogo} />
+      </div>
+      <div className="h-[1px] w-full bg-gray-200 my-8" />
+      <div className="flex flex-col gap-y-4">
+        <h2 className="font-medium">Projects</h2>
+        <div className="flex flex-col gap-y-2">
+          <TextLink href="/project/fire" label="Fire" />
+          <TextLink href="/project/iceberg" label="Iceberg" />
+          <TextLink href="/project/herd" label="Herd" />
+          <TextLink href="/project/bsquared" label="Bsquared" />
         </div>
       </div>
-    </main>
+    </>
   );
 }
