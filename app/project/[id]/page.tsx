@@ -6,8 +6,6 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 
-
-
 export default function ProjectPage() {
   const router = useRouter();
   const { id } = useParams();
@@ -45,7 +43,11 @@ export default function ProjectPage() {
             <button onClick={() => router.back()}>
               <ChevronLeft />
             </button>
-            <img src={project.logo} alt={project.title} className="w-6 h-6 rounded-md" />
+            <img
+              src={project.logo}
+              alt={project.title}
+              className="w-6 h-6 rounded-md"
+            />
             <h1 className="font-medium">{project.title}</h1>
           </div>
           <div className="flex flex-row gap-x-3 justify-end w-full">
@@ -60,28 +62,30 @@ export default function ProjectPage() {
           </div>
         </div>
 
-        <div className="flex flex-col w-full  bg-gray-[#F6F7F9] rounded-2xl justify-center items-center">
-          {getMediaType(project.content[currentImage]) === "video" ? (
+        <div>
+          <p>{project.description}</p>
+        </div>
+
+        {}
+        <div className="relative flex items-center justify-center overflow-hidden rounded-none border-y-[1px] border-preview-border-light bg-preview-light p-4 shadow-none sm:rounded-xl sm:border sm:shadow-sm dark:border-preview-border-dark">
+          {getMediaType(project.content[currentImage].url) === "video" ? (
             <video
-              autoPlay
+              controls
               loop
+              autoPlay={currentImage === 0}
               muted
               playsInline
-              className="w-full h-full object-cover rounded-2xl"
+              className="w-full aspect-1 object-cover rounded-2xl"
             >
-              <source src={project.content[currentImage]} type="video/mp4" />
+              <source src={project.content[currentImage].url} type="video/mp4" />
             </video>
           ) : (
             <img
-              src={project.content[currentImage]}
-              className="w-full h-full object-cover rounded-2xl"
+              src={project.content[currentImage].url}
+              className="w-full h-fit object-contain rounded-2xl "
               alt={project.title}
             />
           )}
-        </div>
-
-        <div>
-          <p>{project.description}</p>
         </div>
       </div>
     </>
