@@ -39,7 +39,7 @@ export default function ProjectPage() {
     <>
       <div className="flex flex-col gap-y-4 w-full">
         <div className="flex flex-row justify-between w-full">
-          <div className="flex flex-row gap-x-2">
+          <div className="flex flex-row gap-x-1">
             <button onClick={() => router.back()}>
               <ChevronLeft />
             </button>
@@ -50,6 +50,7 @@ export default function ProjectPage() {
             />
             <h1 className="font-medium">{project.title}</h1>
           </div>
+          {/* TODO: Add copy + links button */}
         </div>
 
         <div>
@@ -57,7 +58,7 @@ export default function ProjectPage() {
         </div>
 
         <ul className="space-y-4">
-          {project.content.map((work) => {
+          {project.content.map((work, index) => {
             return (
               <li key={work.url} className="space-y-2">
                 <div className="flex flex-col ">
@@ -69,7 +70,7 @@ export default function ProjectPage() {
                     <video
                       controls
                       loop
-                      autoPlay={currentImage === 0}
+                      autoPlay={index === 0}
                       muted
                       playsInline
                       className="w-full aspect-1 object-cover rounded-2xl"
