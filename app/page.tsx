@@ -70,12 +70,20 @@ export default function Home() {
       <div className="h-[1px] w-full bg-gray-200 my-8" />
       <div className="flex flex-col gap-y-4">
         <h2 className="font-medium">Projects</h2>
-        <div className="flex flex-col gap-y-2">
-          <TextLink href="/project/fire" label="Fire" />
-          <TextLink href="/project/iceberg" label="Iceberg" />
-          <TextLink href="/project/herd" label="Herd" />
-          <TextLink href="/project/bsquared" label="Bsquared" />
-        </div>
+        <ul className="flex flex-col gap-y-2">
+          <li>
+            <TextLink href="/project/fire" label="Fire" />
+          </li>
+          <li>
+            <TextLink href="/project/iceberg" label="Iceberg" />
+          </li>
+          <li>
+            <TextLink href="/project/herd" label="Herd" />
+          </li>
+          <li>
+            <TextLink href="/project/bsquared" label="Bsquared" />
+          </li>
+        </ul>
       </div>
     </>
   );
