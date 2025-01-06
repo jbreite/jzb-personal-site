@@ -2,30 +2,14 @@
 "use client";
 
 import { projects } from "@/constants/projects";
-import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ChevronLeft } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
-import { useState } from "react";
 
 export default function ProjectPage() {
   const router = useRouter();
   const { id } = useParams();
-  console.log(id);
 
   const project = projects[id as keyof typeof projects];
-  const [currentImage, setCurrentImage] = useState(0);
-  const carouselContent = project.content;
-
-  //Move carousel
-  const moveForward = () => {
-    setCurrentImage((prevSlide) => (prevSlide + 1) % carouselContent.length);
-  };
-
-  const moveBack = () => {
-    setCurrentImage(
-      (prevSlide) =>
-        (prevSlide - 1 + carouselContent.length) % carouselContent.length
-    );
-  };
 
   const getMediaType = (url: string) => {
     const extension = url.split(".").pop()?.toLowerCase();
