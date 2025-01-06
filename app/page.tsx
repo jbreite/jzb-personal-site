@@ -67,7 +67,10 @@ export default function Home() {
         <ButtonLink href={LinkedInLink} label="LinkedIn" image={LinkedinLogo} />
         <ButtonLink href={SubstackLink} label="Substack" image={SubstackLogo} />
       </div>
+
       <div className="h-[1px] w-full bg-gray-200 my-8" />
+
+      {/* Projects */}
       <div className="flex flex-col gap-y-4">
         <h2 className="font-medium">Projects</h2>
         <ul className="flex flex-col gap-y-2">

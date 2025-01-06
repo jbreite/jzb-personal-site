@@ -65,7 +65,7 @@ export default function ProjectPage() {
                   <h1 className="font-medium">{work.title}</h1>
                   <p>{work.description}</p>
                 </div>
-                <div className="relative flex items-center justify-center overflow-hidden rounded-none border-y-[1px] border-preview-border-light bg-preview-light p-4 shadow-none sm:rounded-xl sm:border sm:shadow-sm dark:border-preview-border-dark">
+                <div className="relative flex items-center justify-center overflow-hidden -mx-6 px-6 py-4 rounded-none border-b-[1px] border-preview-border-light bg-preview-light shadow-none sm:rounded-xl sm:mx-0 sm:p-4 sm:border sm:shadow-sm dark:border-preview-border-dark">
                   {getMediaType(work.url) === "video" ? (
                     <video
                       controls
@@ -73,14 +73,14 @@ export default function ProjectPage() {
                       autoPlay={index === 0}
                       muted
                       playsInline
-                      className="w-full aspect-1 object-cover rounded-2xl"
+                      className="w-full aspect-1 object-cover rounded-md sm:rounded-xl"
                     >
                       <source src={work.url} type="video/mp4" />
                     </video>
                   ) : (
                     <img
                       src={work.url}
-                      className="w-full h-fit max-h-96 max-h-2xl object-contain rounded-2xl"
+                      className="w-full h-fit max-h-96 object-contain rounded-md sm:rounded-2xl"
                       alt={work.title}
                     />
                   )}
@@ -91,22 +91,5 @@ export default function ProjectPage() {
         </ul>
       </div>
     </>
-  );
-}
-
-function CarouselControlButton({
-  onClick,
-  icon,
-}: {
-  onClick: () => void;
-  icon: React.ReactNode;
-}) {
-  return (
-    <button
-      onClick={onClick}
-      className="flex w-6 h-6 items-center justify-center rounded-full bg-[#F6F7F9]"
-    >
-      {icon}
-    </button>
   );
 }

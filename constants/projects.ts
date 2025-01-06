@@ -25,7 +25,7 @@ export const projects = {
       },
       {
         type: "image",
-        url: "/fire/fireSimulatorUi.png",
+        url: "/fire/simulatorUi.png",
         title: "Fire Simulator UI",
         description:
           "This was the updated UI for the simulator that was built after our intial rush of users. It incluced enhanmcnets and a design system for different types of core transactions on Ethereum.",
@@ -73,7 +73,7 @@ export const projects = {
       },
       {
         type: "image",
-        url: "/iceberg/farcasterINdex.png",
+        url: "/iceberg/farcasterIndex.png",
         title: "Iceberg Farcaster Index",
         description:
           "This concept was created as an ad that was tested how interested it got useres on Farcaster and Twitter. It combined token pages created in the app as well as indexes.",
