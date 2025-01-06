@@ -27,6 +27,8 @@ export default function ProjectPage() {
             <button onClick={() => router.back()}>
               <ChevronLeft />
             </button>
+          </div>
+          <div className="flex flex-row gap-x-1">
             <img
               src={project.logo}
               alt={project.title}
@@ -34,14 +36,13 @@ export default function ProjectPage() {
             />
             <h1 className="font-medium">{project.title}</h1>
           </div>
-          {/* TODO: Add copy + links button */}
         </div>
 
-        <div>
+        <div className="mb-4 bg-[#F6F7F9] rounded-xl p-4">
           <p>{project.description}</p>
         </div>
 
-        <ul className="space-y-4">
+        <ul className="space-y-6">
           {project.content.map((work, index) => {
             return (
               <li key={work.url} className="space-y-2">

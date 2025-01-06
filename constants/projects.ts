@@ -84,7 +84,7 @@ export const projects = {
   herd: {
     title: "Herd",
     description:
-      "Building a new way to take control of your health. Herd will help you understand your health and give you the tools to get to a diagnosis quicker.",
+      "Building a new way to take control of your health. Herd will help you understand your health and give you the tools to get to a diagnosis quicker. Currently in development with React Native for iOS.",
     type: "project",
     links: {
       website: "https://withherd.com/",
@@ -125,7 +125,7 @@ export const projects = {
   bsquared: {
     title: "Bsquared",
     description:
-      "An iOS app and Farcaster Frame V2 that allows for users to sports bet onchain through Overtime Markets.",
+      "An iOS app and Farcaster Frame V2 that allows for users to sports bet onchain through Overtime Markets. Built in React Native for mobile and Next.js for the web.",
     type: "project",
     links: {
       website: "",
