@@ -122,4 +122,45 @@ export const projects = {
     ],
     logo: "/herd/herdLogo.png",
   },
+  bsquared: {
+    title: "Bsquared",
+    description:
+      "An iOS app and Farcaster Frame V2 that allows for users to sports bet onchain through Overtime Markets.",
+    type: "project",
+    links: {
+      website: "",
+      twitter: "",
+    },
+    content: [
+      {
+        type: "video",
+        url: "/bsquared/kcOverOpendingDaySquare.mov",
+        title: "Placing a bet",
+        description:
+          "Fun little onboarding flow for the app that lets you customize your wallet and get started betting on sports. Made with React Reaniamted.",
+      },
+      {
+        type: "video",
+        url: "/bsquared/frameBets.mov",
+        title: "Farcaster Frame V2",
+        description:
+          "Adapted the origional iOS app into a Next.js app that is compatible with Farcaster Frame V2, allowing users to bet from a social feed.",
+      },
+      {
+        type: "video",
+        url: "/bsquared/bsquaredIosOnboarding.mov",
+        title: "Mobile Onboarding",
+        description:
+          "Fun little onboarding flow for the app that lets you customize your wallet and get started betting on sports. Made with React Reaniamted.",
+      },
+      {
+        type: "video",
+        url: "/bsquared/betTabInteractionStates.mov",
+        title: "Mobile Bet Tab Interaction States",
+        description:
+          "Different intreraction states on the bet tab that persis across the app.",
+      },
+    ],
+    logo: "/bsquared/bsquaredLogo.png",
+  },
 };
