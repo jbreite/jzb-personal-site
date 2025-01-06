@@ -50,43 +50,44 @@ export default function ProjectPage() {
             />
             <h1 className="font-medium">{project.title}</h1>
           </div>
-          <div className="flex flex-row gap-x-3 justify-end w-full">
-            <CarouselControlButton
-              onClick={moveBack}
-              icon={<ChevronLeft size={20} />}
-            />
-            <CarouselControlButton
-              onClick={moveForward}
-              icon={<ChevronRight size={20} />}
-            />
-          </div>
         </div>
 
         <div>
           <p>{project.description}</p>
         </div>
 
-        {}
-        <div className="relative flex items-center justify-center overflow-hidden rounded-none border-y-[1px] border-preview-border-light bg-preview-light p-4 shadow-none sm:rounded-xl sm:border sm:shadow-sm dark:border-preview-border-dark">
-          {getMediaType(project.content[currentImage].url) === "video" ? (
-            <video
-              controls
-              loop
-              autoPlay={currentImage === 0}
-              muted
-              playsInline
-              className="w-full aspect-1 object-cover rounded-2xl"
-            >
-              <source src={project.content[currentImage].url} type="video/mp4" />
-            </video>
-          ) : (
-            <img
-              src={project.content[currentImage].url}
-              className="w-full h-fit object-contain rounded-2xl "
-              alt={project.title}
-            />
-          )}
-        </div>
+        <ul className="space-y-4">
+          {project.content.map((work) => {
+            return (
+              <li key={work.url} className="space-y-2">
+                <div className="flex flex-col ">
+                  <h1 className="font-medium">{work.title}</h1>
+                  <p>{work.description}</p>
+                </div>
+                <div className="relative flex items-center justify-center overflow-hidden rounded-none border-y-[1px] border-preview-border-light bg-preview-light p-4 shadow-none sm:rounded-xl sm:border sm:shadow-sm dark:border-preview-border-dark">
+                  {getMediaType(work.url) === "video" ? (
+                    <video
+                      controls
+                      loop
+                      autoPlay={currentImage === 0}
+                      muted
+                      playsInline
+                      className="w-full aspect-1 object-cover rounded-2xl"
+                    >
+                      <source src={work.url} type="video/mp4" />
+                    </video>
+                  ) : (
+                    <img
+                      src={work.url}
+                      className="w-full h-fit max-h-96 max-h-2xl object-contain rounded-2xl"
+                      alt={work.title}
+                    />
+                  )}
+                </div>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </>
   );
