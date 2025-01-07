@@ -4,6 +4,7 @@
 import { projects } from "@/constants/projects";
 import { ChevronLeft } from "lucide-react";
 import { useParams, useRouter } from "next/navigation";
+import { clsx } from "clsx";
 
 export default function ProjectPage() {
   const router = useRouter();
@@ -44,13 +45,22 @@ export default function ProjectPage() {
 
         <ul className="space-y-6">
           {project.content.map((work, index) => {
+            const isLastItem = index === project.content.length - 1;
+
             return (
               <li key={work.url} className="space-y-2">
-                <div className="flex flex-col ">
+                <div className="flex flex-col">
                   <h1 className="font-medium">{work.title}</h1>
                   <p>{work.description}</p>
                 </div>
-                <div className="relative flex items-center justify-center overflow-hidden -mx-6 px-6 py-4 rounded-none border-b-[1px] border-preview-border-light bg-preview-light shadow-none sm:rounded-xl sm:mx-0 sm:py-2 sm:border sm:shadow-sm dark:border-preview-border-dark">
+                <div
+                  className={clsx(
+                    "relative flex items-center justify-center overflow-hidden -mx-6 px-6 py-4 rounded-none bg-preview-light shadow-none sm:rounded-xl sm:mx-0 sm:py-6 sm:border sm:shadow-sm dark:border-preview-border-dark",
+                    {
+                      "border-b-[1px] border-preview-border-light": !isLastItem,
+                    }
+                  )}
+                >
                   {getMediaType(work.url) === "video" ? (
                     <video
                       controls
