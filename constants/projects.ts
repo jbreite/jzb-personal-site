@@ -2,7 +2,7 @@ export const projects = {
   fire: {
     title: "Fire",
     description:
-      "Led product, design, and growth for crypto security tool for 60,000+ users and over $750m+ in assets. The Fire extesnsion was acquired by Kerebus",
+      "Led product, design, and growth for a crypto security tool protecting over $750M in assets for 60,000+ users. The Fire extension was successfully acquired by Kerebus.",
     type: "work",
     links: {
       website: "https://getfire.xyz",
@@ -21,21 +21,21 @@ export const projects = {
         url: "https://pbs.twimg.com/media/GYRvTF4akAApk55?format=jpg&name=medium",
         title: "First designs + Ads for the Fire Extension",
         description:
-          "These were the first designs that went viral and got us a lot of traction for the extension across Twitter. The ad copy and clear messaging was key to getting the word out.",
+          "These initial designs gained significant traction on Twitter. The combination of compelling ad copy and clear messaging proved crucial for expanding our user base.",
       },
       {
         type: "image",
-        url: "/fire/simulatorUi.png",
+        url: "/fire/fireSimulatorUI.png",
         title: "Fire Simulator UI",
         description:
-          "This was the updated UI for the simulator that was built after our intial rush of users. It incluced enhanmcnets and a design system for different types of core transactions on Ethereum.",
+          "This was the updated UI for the simulator that was built after our initial rush of users. It included enhancements and a design system for different types of core transactions on Ethereum.",
       },
       {
         type: "image",
         url: "/fire/fireTransactionOfTheDay.png",
         title: "Transaction of the Day",
         description:
-          "As a hackathon project, the team built a way to get our users to do one transaction per day on Ethereum, meant to increase engagment of the extension and our future wallet. ",
+          "A hackathon project that turned into a real product the team built a way to encourage users to perform one transaction per day on Ethereum, designed to increase engagement with the extension and our future wallet.",
       },
     ],
     logo: "/fire/fireLogo.svg",
@@ -43,7 +43,7 @@ export const projects = {
   iceberg: {
     title: "Iceberg",
     description:
-      "Led product, design, and frontend for a friendly consumer crypto idea to be able to trade any token across any chain with just USDC like a debit card on Coinbase.",
+      "Led product, design, and frontend development for a consumer-friendly crypto platform that enables cross-chain token trading using USDC, similar to using a debit card on Coinbase, but onchain.",
     type: "work",
     links: {
       website: "https://getfire.xyz",
@@ -55,28 +55,28 @@ export const projects = {
         url: "/iceberg/icebergRecording-8:27.mov",
         title: "Iceberg Demo",
         description:
-          "A demo of Iceberg the app, showing the full user flow of utilizing buying power, swapping tokens, and viewing a token.",
+          "Demo of the Iceberg app showcasing the complete user experience: managing buying power, token swaps, and token portfolio visualization.",
       },
       {
         type: "image",
         url: "/iceberg/icebergForYou.png",
         title: "For You Pages",
         description:
-          "This concept was supposed to show how users could look at onchain more socially and event comment on swaps (shout out Interface for doing this in prod!).",
+          "This concept showcased how users could interact with on-chain activities in a social context, including the ability to comment on token swaps. (Special thanks to Interface for implementing this in production!)",
       },
       {
         type: "image",
         url: "/iceberg/icebergProfilePage.png",
         title: "Profile Pages",
         description:
-          "Supposed to show a user's onchain activity and allow them to view their own swaps and comments. Additionally, users could follower other users as well as set up a copy trading bot.",
+          "Enables users to track their onchain activity, view personal swaps and comments. Users can follow other traders and configure automated copy trading functionality.",
       },
       {
         type: "image",
         url: "/iceberg/farcasterIndex.png",
         title: "Iceberg Farcaster Index",
         description:
-          "This concept was created as an ad that was tested how interested it got useres on Farcaster and Twitter. It combined token pages created in the app as well as indexes.",
+          "This concept was developed as an advertising campaign to gauge user interest across Farcaster and Twitter platforms. It integrated both individual token pages and index features from the app.",
       },
     ],
     logo: "/iceberg/icebergLoog.png",
@@ -96,28 +96,28 @@ export const projects = {
         url: "/herd/herd-home.png",
         title: "Herd Home",
         description:
-          "The Herd home page allows for useres to get guided questions about their health including their current test results or just a cold that they are feeling.",
+          "The Herd home page provides users with personalized health guidance through targeted questions, covering everything from lab test results to current symptoms like the common cold.",
       },
       {
         type: "image",
         url: "/herd/herd-history.png",
         title: "Herd History",
         description:
-          "A totally redesigned wayt to look at your EHR data results. Turns them from documents with no meaning, to a timeline of your health.",
+          "A complete reimagining of electronic health record (EHR) presentation. Transforms raw medical data into an intuitive, chronological timeline of your health journey.",
       },
       {
         type: "image",
         url: "/herd/herd-context.png",
         title: "Herd Context",
         description:
-          "Herd context allows for useres to reference specific health documents or past chats to know about their health. Think of it as Cursor for your electronic health records.",
+          "Herd Context enables users to seamlessly reference their health documents and past conversations, serving as a powerful search tool for your electronic health records — similar to how Cursor works for code.",
       },
       {
         type: "image",
         url: "/herd/herd-chat.png",
         title: "Herd Chat",
         description:
-          "Allows for users to dive deeper into their health and get more personalized care.",
+          "A chat interface that enables users to explore their health concerns in depth, providing personalized guidance and care recommendations based on their unique medical history.",
       },
     ],
     logo: "/herd/herdLogo.png",
@@ -125,7 +125,7 @@ export const projects = {
   bsquared: {
     title: "Bsquared",
     description:
-      "An iOS app and Farcaster Frame V2 that allows for users to sports bet onchain through Overtime Markets. Built in React Native for mobile and Next.js for the web.",
+      "A cross-platform sports betting application built on Overtime Markets, enabling onchain wagers through iOS and Farcaster Frame V2. Developed with React Native (mobile) and Next.js (web).",
     type: "project",
     links: {
       website: "",
@@ -137,28 +137,28 @@ export const projects = {
         url: "/bsquared/kcOverOpendingDaySquare.mov",
         title: "Placing a bet",
         description:
-          "Fun little onboarding flow for the app that lets you customize your wallet and get started betting on sports. Made with React Reaniamted.",
+          "Placing a bet on the mobile app through a created Coinbase smart wallet where the user doesn't need to pay gas and can just use USDC like a debit card on DraftKings.",
       },
       {
         type: "video",
         url: "/bsquared/frameBets.mov",
         title: "Farcaster Frame V2",
         description:
-          "Adapted the origional iOS app into a Next.js app that is compatible with Farcaster Frame V2, allowing users to bet from a social feed.",
+          "Transformed the original iOS application into a Next.js-powered platform that integrates with Farcaster Frame V2, enabling seamless betting directly from social feeds.",
       },
       {
         type: "video",
         url: "/bsquared/bsquaredIosOnboarding.mov",
         title: "Mobile Onboarding",
         description:
-          "Fun little onboarding flow for the app that lets you customize your wallet and get started betting on sports. Made with React Reaniamted.",
+          "Streamlined onboarding experience allowing users to customize their wallet and begin sports betting. Built with React Reanimated for smooth animations.",
       },
       {
         type: "video",
         url: "/bsquared/betTabInteractionStates.mov",
         title: "Mobile Bet Tab Interaction States",
         description:
-          "Different intreraction states on the bet tab that persis across the app.",
+          "Built with React Reanimated, this video demonstrates the different interaction states on the bet tab, making it feel like DraftKings or FanDuel.",
       },
     ],
     logo: "/bsquared/bsquaredLogo.png",
