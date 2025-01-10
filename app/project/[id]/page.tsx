@@ -25,7 +25,13 @@ export default function ProjectPage() {
       <div className="flex flex-col gap-y-4 w-full">
         <div className="flex flex-row justify-between w-full">
           <div className="flex flex-row gap-x-1">
-            <button onClick={() => router.back()}>
+            <button onClick={() => {
+              if (window.history.length > 1) {
+                router.back();
+              } else {
+                router.push('/');
+              }
+            }}>
               <ChevronLeft />
             </button>
           </div>
