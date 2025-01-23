@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { CSPostHogProvider } from "@/providers/Posthog";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,9 +21,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="flex min-h-screen flex-col items-center justify-start py-6 px-6 sm:py-16">
-          <div className="max-w-xl w-full">{children}</div>
-        </main>
+        <CSPostHogProvider>
+          <main className="flex min-h-screen flex-col items-center justify-start py-6 px-6 sm:py-16">
+            <div className="max-w-xl w-full">{children}</div>
+          </main>
+        </CSPostHogProvider>
       </body>
     </html>
   );
