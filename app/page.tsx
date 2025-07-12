@@ -26,7 +26,10 @@ export default function Home() {
       </header>
 
       <div className="flex flex-col gap-y-4 py-6 ">
-        <p>I live in New York. Currently exploring new opportunities.</p>
+        <p>
+          I live in New York. Currently, I&apos;m a product engineer at{" "}
+          <TextLink href={PogoLink} label="Pogo" />.
+        </p>
         <p>
           I co-founded <TextLink href={FireLink} label="Fire" external /> a a
           security tool to help users protect funds while interacting with
