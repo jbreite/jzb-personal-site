@@ -78,16 +78,19 @@ export default function Home() {
         <h2 className="font-medium">Projects</h2>
         <ul className="flex flex-col gap-y-2">
           <li>
-            <TextLink href="/project/fire" label="Fire" />
-          </li>
-          <li>
-            <TextLink href="/project/iceberg" label="Iceberg" />
+            <TextLink href="https://bashkit.dev" label="Bashkit" external />
           </li>
           <li>
             <TextLink href="/project/herd" label="Herd" />
           </li>
           <li>
             <TextLink href="/project/bsquared" label="Bsquared" />
+          </li>
+          <li>
+            <TextLink href="/project/iceberg" label="Iceberg" />
+          </li>
+          <li>
+            <TextLink href="/project/fire" label="Fire" />
           </li>
         </ul>
       </div>

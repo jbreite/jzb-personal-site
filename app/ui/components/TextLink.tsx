@@ -12,13 +12,13 @@ export default function TextLink({
   external?: boolean;
 }) {
   return (
-    <a href={href} className=" text-blue-500 hover:text-blue-300">
-      {/* <span className="flex items-center"> */}
-      {label}
-      {/* {external && (
+    <a href={href} className="text-blue-500 hover:text-blue-300">
+      <span className="inline-flex items-center gap-x-1">
+        {label}
+        {external && (
           <Image src={ExternalLink} alt="Link" className="h-4 aspect-square" />
-        )} */}
-      {/* </span> */}
+        )}
+      </span>
     </a>
   );
 }
