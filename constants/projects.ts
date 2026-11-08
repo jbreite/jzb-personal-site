@@ -11,14 +11,14 @@ export const projects = {
     content: [
       {
         type: "video",
-        url: "https://video.twimg.com/ext_tw_video/1620090093842071553/pu/vid/1280x720/-PGWo5lrWxn11eiT.mp4",
+        url: "/fire/fireMintingGame.mp4",
         title: "Fire Minting Game",
         description:
           "The minting game was the first moment of delight that we wanted users to experience. We had them use the simulator to be able to know which card to get and not get 'rekt'!",
       },
       {
         type: "image",
-        url: "https://pbs.twimg.com/media/GYRvTF4akAApk55?format=jpg&name=medium",
+        url: "/fire/fireFirstDesigns.jpg",
         title: "First designs + Ads for the Fire Extension",
         description:
           "These initial designs gained significant traction on Twitter. The combination of compelling ad copy and clear messaging proved crucial for expanding our user base.",
