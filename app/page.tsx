@@ -78,6 +78,9 @@ export default function Home() {
         <h2 className="font-medium">Projects</h2>
         <ul className="flex flex-col gap-y-2">
           <li>
+            <TextLink href="https://jzbui.com" label="JZB UI" external />
+          </li>
+          <li>
             <TextLink href="https://bashkit.dev" label="Bashkit" external />
           </li>
           <li>
